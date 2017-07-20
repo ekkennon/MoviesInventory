@@ -1,0 +1,91 @@
+﻿@model MoviesInventory.Domain.Movie
+
+@{
+    ViewBag.Title = @Html.DisplayFor(model => model.Title) + " Details";
+}
+
+<h2>@Html.DisplayFor(model => model.Title) Details</h2>
+
+<div>
+    <h4>@Html.DisplayFor(model => model.Title)</h4>
+	<hr />
+    <dl class="dl-horizontal">
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReleaseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReleaseDate)<hr />
+
+        </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Note)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Note)<hr />
+
+            </dd>
+        
+                <dt>
+                    @Html.DisplayNameFor(model => model.RunningTime)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.RunningTime)<hr />
+
+                </dd>
+           
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Owner)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Owner)<hr />
+
+                    </dd>
+               
+                        <dt>
+                            @Html.DisplayNameFor(model => model.Barcode)
+                        </dt>
+
+                        <dd>
+                            @Html.DisplayFor(model => model.Barcode)<hr />
+
+                        </dd>
+                    
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Format)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Format)<hr />
+
+                            </dd>
+                        
+                                <dt>
+                                    @Html.DisplayNameFor(model => model.Location)
+                                </dt>
+
+                                <dd>
+                                    @Html.DisplayFor(model => model.Location)<hr />
+
+                                </dd>
+                            
+                                    <dt>
+                                        @Html.DisplayNameFor(model => model.Rating)
+                                    </dt>
+
+                                    <dd>
+                                        @Html.DisplayFor(model => model.Rating)<hr />
+
+                                    </dd>
+                                </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

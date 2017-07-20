@@ -1,0 +1,73 @@
+﻿@model IEnumerable<MoviesInventory.Domain.Movie>
+
+@{
+    ViewBag.Title = "Movies Inventory";
+}
+
+<h2>Movies Inventory</h2>
+
+<p>
+
+    @Html.ActionLink("Add Movie", "Create") | @Html.ActionLink("Quick Add", "QuickAdd")
+    @using (Html.BeginForm())
+    {
+
+        @Html.TextBox("SearchString")
+        <input type="submit" value="Search Title" />
+
+    }
+    Show Movies Starting With:
+    @foreach (string ltr in ViewBag.Letters)
+{
+    @Html.ActionLink(ltr, "Index", new { letter = ltr })
+    @Html.AttributeEncode("  ")
+    
+}
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Owner)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RunningTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Format)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            
+            @Html.ActionLink(item.Title, "Details", new { id=item.ID})
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Owner)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RunningTime)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Format)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

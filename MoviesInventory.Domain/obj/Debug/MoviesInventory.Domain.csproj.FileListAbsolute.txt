@@ -1,0 +1,9 @@
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\bin\Debug\MoviesInventory.Domain.dll
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\bin\Debug\MoviesInventory.Domain.pdb
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\obj\Debug\MoviesInventory.Domain.csprojResolveAssemblyReference.cache
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\obj\Debug\MoviesInventory.Domain.dll
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\obj\Debug\MoviesInventory.Domain.pdb
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\bin\Debug\AntiXssLibrary.dll
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\bin\Debug\HtmlSanitizationLibrary.dll
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\bin\Debug\AntiXssLibrary.xml
+C:\Users\ekk\Dropbox\Private\programming\languages\asp.net\MVC class\MoviesInventory\MoviesInventory.Domain\bin\Debug\HtmlSanitizationLibrary.xml
